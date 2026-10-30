@@ -9,16 +9,24 @@
                <h1>Vanessa Moreira</h1>
 
         <!--Apresentação-->
-        <header>
+        <header id="topo">
            <img 
             src="imagens/foto.avif" alt="Foto de um gato"
             width="300px"
             height="300px"
             />
+            <a href="#topo">Voltar ao topo</a>
+
                 <h1>Vanessa Moreira</h1>
                 <p>Sou estudante de <strong>Desenvolvimento Web Full Stack</strong>, na Praia</p>
             <nav>
-                <p>Início . Sobre . Serviços . Contactos</p>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre mim</a></li>
+                    <li><a href="percurso.html">Meu percurso</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+                
             </nav>
         </header>
 
@@ -30,18 +38,54 @@
                 <p>Para mim, um bom código é aquele que resolve um problema real.</p>
                 <p>Fora do computador você me encontra com um livro na mão ou com playlist rolando. Estou sempre aprendendo algo novo.</p>
                 <p>Venho das Artes Gráficas, então me preocupo tanto com o visual quanto com o funcionamento.</p>
-           </section>
+                <h3>Competências em desenvolvimento</h3>
+                <ul>
+                    <li>HTML5 semântico e estruturação acessível</li>
+                    <li>Controlo de versões com Git e GitHub</li>
+                    <li>Atenção ao detalhe e organização de código</li>
+                    <li>Comunicação e trabalho em equipa</li>
+                </ul>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Linguagem de marcação que define a estrutura de páginas web.</dd>
+                    <dt>Git</dt>
+                    <dd>Sistema de controlo de versões distribuído.</dd>
+                </dl>
+            </section>
            
            <section>
                 <!--Esta sessão é sobre meu percurso-->
                 <h2>Meu percurso</h2>
         
-                <h3>Artes Gráficas</h3>
-                <p>De 2022 a 2024. Aprendi composição, tipografia, teoria das cores e identidade visual. Foi aqui que desenvolvi o olhar para design que hoje levo para as interfaces que contruo.</p>
-
-                <h3>Curso de Desenvolvimento Web Full Stack</h3>
-                <p>Desde 2026. Comecei a transformar meu olhar de designer em códico: HTML, CSS, JavaScript e Banco de dados, entre outros.</p>
-           </section>
+                <p>
+                    <table>
+                        <caption>
+                            Percurso formativo e profissional de Vanessa Moreira
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Período</th>
+                                <th scope="col">Área</th>
+                                <th scope="col">Entidades</th>
+                                <th scope="col">Local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">2026 - Presente</th>
+                                <td>Curso de Desenvolvimento Web Full-Stack</td>
+                                <td>Formação Proficional</td>
+                                <td>Praia</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2022 - 2024</th>
+                                <td>Ensino Secundário</td>
+                                <td>Escola Secundário Polivalente Cesaltina Ramos</td>
+                                <td>Praia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
            <section>
             <!--Testemunhos-->
@@ -67,8 +111,13 @@
                 <h2>Contactos</h2>
                 <p>E-mail: vanemoreira006@gmail.com <br/> 
                    GitHub: nessaVM-dev
+                   <a href="https://github.com/nessaVM-dev"
+                   target="_blank"
+                   real="noreferrer noopener">Perfil no GitHub</a>
+                   <a href="mailto:vanemoreira006@gmail.com">vanemoreira006@gmai.com</a>
                 </p>
             </section>
+
         </main>
 
         <footer>
