@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Oficina de Olaria Tradicional de Barcelos</title>
+    </head>
+    <body>
+        <header>
+            <h1>Oficina de Olaria Tradicional de Barcelos</h1>
+            <p>A olaria e o figurado de Barcelos são duas das mais ricas expressões da arte popular portuguesa. Trabalho há séculos no barro vermelho caravterístico do Minho, o artesanato de Barcelos combina técnicas de moldagem na roda ancestral com a imaginação viva dos mestres barristas.</p>
+            <p>A nossa oficina comunitária abre portas todas as semanas a quem desejar sujar as mão no barro, aprender a girar a roda de oleiro e pintar motivos tradicionais do nosso folclore.</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#workshops">Workshops</a></li>
+                    <li><a href="#horarios">Horários</a></li>
+                    <li><a href="#inscricao">Pré-Inscrição</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="workshops">
+                    <h2>Workshops Disponíveis</h2>
+
+                    <article>
+                        <h3>Iniciação à Roda de Oleiro</h3>
+                        <p>Aprenda  a centrar o barro na roda manual, a erguer as paredes e a criar as suas primeiras peças utilitárias (tigelas, canecas e pequenos jarros).</p>
+
+                        <ul>
+                            <li><strong>Duração:</strong> 8 horas (4 sessões de 2 horas)</li>
+                            <li><strong>Materiais:</strong> Barro vermelho, avental e ferramentas de corte incluídos</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>Pintura de Figurado e Galo de Barcelos</h3>
+                        <p>Descubra a simbologia e as paletas tradicionais da arte popular minhota. Cada formando pinta uma peça moldada em barro cozido e aprende a técnica dos ponteados e florais.</p>
+
+                        <ul>
+                            <li><strong>Duração:</strong> 4 horas (2 sessões de 2 horas)</li>
+                            <li><strong>Materiais:</strong> Peças cozidas, tintas acrílicas tradicionais e pincéis incluídos</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>Modelação Manual e Escultura Livre</h3>
+                        <p>Técnicas ancestrais de rolinhos (lastras) e modelação direta com as mãos, sem recurso à roda. Ideal para criar peças decorativas, figuras e máscaras.</p>
+
+                        <ul>
+                            <li><strong>Duração:</strong> 6 horas (3 sessões de 2 horas)</li>
+                            <li><strong>Materiais:</strong> Barro terracota e cozedura em forno elétrico incluídos.</li>
+                        </ul>
+                    </article>
+            </section>
+
+            <section id="horarios">
+                <h2>Horários e Modalidades</h2>
+
+                <table>
+                    <caption>
+                        Horários e Modalidades
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Modalidades</th>
+                            <th scope="col">Dias</th>
+                            <th scope="col">Horários</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Regime Pós-laboral</td>
+                            <td>Terças e Quintas-feiras</td>
+                            <td>Das 19h00 às 21h00</td>
+                        </tr>
+                        <tr>
+                            <td>Regime de Fim de Semana</td>
+                            <td>Sábados</td>
+                            <td>Das 10h00 às 13h00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="inscricao">
+                <h3>Formulário de Pré-Inscrição</h3>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Dados pessoais do formando</legend>
+                    <p>
+                        <label for="nome-completo">Nome completo:</label> <br/>
+                        <input type="text" 
+                               id="nome-completo" 
+                               name="nome_completo" 
+                            placeholder="EX.:Maria Fortes"/>
+                    </p>
+
+                    <p>
+                        <label for="email-inscricao">Endereço de Correio eletrónico:</label> <br/>
+                        <input type="email"
+                               id="email-inscricao"
+                               name="email"
+                               placeholder="maria@exemplo.pt"/>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Contacto telefónico</label>
+                        <input type="tel"
+                               id="telefone"
+                               name="telefone"
+                               placeholder="912 345 678"/>
+                    </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dados da formação</legend>
+
+                        <p>
+                            <label for="workshop">Workshop</label>
+                            <select id="workshop" name="workshop"> 
+                                <option value="">Escolha um Workshops Disponíveis</option>
+                                <option value="roda">Roda de Oleiro</option>
+                                <option value="pintura">Pintura de Figurado</option>
+                                <option value="modelacao">Modelação Manual</option>
+                            </select>
+                        </p>
+
+                        <p>Regime de frequência</p>
+                        <p>
+                            <input
+                                type="radio"
+                                id="pos-laboral"
+                                name="regime"
+                                value="pos-laboral"
+                                checked/>
+
+                            <label for="pos-laboral">Pós-Laboral</label> <br/>
+                            
+                            <input 
+                                type="radio"
+                                id="fim-semana"
+                                name="regime"
+                                value="fim-semana"/>
+                            <label for="fim-semana">Fim de semana</label>
+                        </p>
+                        
+                        <p>Dias com disponibilidade</p>
+                        <p>
+                            <input 
+                            type="checkbox"
+                            id="terca"
+                            name="dias"
+                            value="terca"/>
+                            <label for="terca">Terça-feira</label>
+
+                            <input
+                            type="checkbox"
+                            id="quinta"
+                            name="dias"
+                            value="quinta"/>
+                            <label for="quinta">Quinta-feira</label>
+
+                            <input
+                            type="checkbox"
+                            id="sabado"
+                            name="dias"
+                            value="sabado"/>
+                            <label for="sabado">Sábado</label>
+                        </p>
+
+                        <p>Experiência anterior ou mensagem pessoal com expectativas</p>
+                        <p>
+                            <label for="mensagem">Mensagem:</label> <br/>
+                            <textarea 
+                            id="mensagem"
+                            name="mensagem"
+                            rows="6"
+                            cols="40"
+                            placeholder="Escreva aqui a sua mensagem..."></textarea>
+
+                            <input
+                            type="checkbox"
+                            id="autorizacao_contacto"
+                            name="autorizacao_contacto"
+                            value="sim"/>
+                            <label for="autorizacao_contacto">Autorização para receção de confirmação de vaga por e-mail</label>
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </p>
+
+                    </fieldset>
+                </form>
+
+
+            </section>
+
+            <section id="contactos">
+                <h3>Contactos da Oficina</h3>
+                <p>Morada: Largo da Feira, n.º 24, Barcelos</p>
+                <p>
+                    Correio eletrónico:
+                    <a href="mailto:olaria@artesanatobarcelos.pt">olaria@artesanatobarcelos.pt</a>
+                </p>
+                <p>
+                    Portal informativo:
+                    <a href="https://artesanatobarcelos.pt"
+                    target="_blank"
+                    rel="noreferrer noopener">Artesanato Barcelos</a>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Associação dos Artesãos e Oleiros de Barcelos</p>
+        </footer>
+    </body>
+</html>
