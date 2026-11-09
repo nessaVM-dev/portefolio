@@ -28,63 +28,105 @@
                 <h2>Envie uma mensagem</h2>
                 <p>Se preferir, pode enviar uma mensagem diretamente através do formulário abaixo:</p>
 
-                <form action="#" method="GET">
-                    <label for="nomecompleto">Nome Completo</label> <br/>
-                    <input 
-                        type="text" 
-                        placeholder="Insira o seu nome completo"
-                        id="nomecompleto" 
-                        name="nomecompleto"/> <br/>
-                    <label for="datadenascimento">Data de Nascimento</label> <br/>
-                    <input 
-                        type="date" 
-                        id="datadenascimento"  
-                        name="datadenascimento"/> <br/>
-                    <label for="password">Password</label> <br/>
-                    <input 
-                        type="password" 
-                        placeholder="Insira a sua palavra passe"
-                        id="password"  
-                        name="password"/> <br/>
+                <form action="#" mathod="post">
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
 
-                    <select>
-                        <option value="m">Masculino</option>
-                        <option valeu="f">Feminino</option>
-                    </select> <br/>
+                        <div>
+                            <label for="nome">Nome</label> <br/>
+                            <input 
+                               type="text"
+                               name="nome"
+                               id="nome"
+                               placeholder="Insira o seu nome"
+                               required
+                               />
+                        </div> <br/>
 
-                    <textarea
-                        id="descricao"
-                        name="descricao"
-                        placeholder="Escreva a tua mensagem"
-                        rows="6"
-                        cols="40"
-                    >
-                    </textarea> <br/>
+                        <div>
+                            <label for="email">Email</label><br/>
+                            <input
+                               type="email"
+                               name="email"
+                               id="email"
+                               placeholder="Insira o teu email"
+                               required
+                               />
+                               
+                        </div> <br/>
 
-                    <label for="telefone">Telefone</label>
-                    <input 
-                        type="radio"
-                        id="telefone"
-                        name="preferencia"
-                        checked/>
-                    <label for="Email">Email</label>
-                    <input
-                        type="radio"
-                        id="email"
-                        name="preferencia"/> <br/>
+                        <div>
+                            <label for="telefone">Telefone</label> <br/>
+                            <input
+                               type="tel"
+                               name="telefone"
+                               id="telefone"
+                               placeholder="(+238) 000 00 00"
+                               />
+                        </div> <br/>
+                    </fieldset>
 
-                    <label for="autorizacao">Autorização para uso dos dados introduzidos</label>
-                    <input
-                        type="checkbox"
-                        id="autorizacao"
-                        name="autorizacao"/>
+                    <fieldset>
+                        <legend>Motivos de Contactos</legend>
+                        <div>
+                            <label for="assunto">Assunto:</label> <br/>
+                            <select required>
+                                <option value="">-- Selecione uma opção --</option>
+                                <option value="Proposta de estagio">Proposta de Estagio</option>
+                                <option value="Projetos ou colaboracoes">Projetos ou colaboracoes</option>
+                                <option value="Duvidas ou esclarecimento">Duvidas ou Esclarecimentos</option>
+                                
+                            </select>
+                        </div> <br/>
 
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpar</button>
+                        <div>
+                            <label for="mensagem">Mensagem</label> <br/>
+                            <textarea 
+                                id="mensagem" 
+                                name="mensagem" 
+                                placeholder="Sua mensagem" 
+                                rows="10" 
+                                cols="20" 
+                                required
+                                maxlength="255"></textarea>
+                        </div> <br/>
 
+                        <div>
+                            <label for="resposta">Como preferes receber a resposta?</label> <br/>
+                            <input
+                               type="radio"
+                               id="telefone"
+                               name="resposta"
+                               value="telefone"
+                               checked
+                               />
+                            <label for="telefone">Telefone</label> 
+
+                            <input
+                               type="radio"
+                               id="email"
+                               name="resposta"
+                               value="email"/>
+                            <label for="email">Email</label> 
+                        </div> <br/>
+
+                        <div>
+                            <label for="autorizacao">Autorização</label>
+                            <input
+                               type="checkbox"
+                               id="autorizacao"
+                               name="autorizacao"
+                               required/>
+                            <label>Autoriza a utilização dos meus dados e aceito os termos de uso da plataforma!</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <button type="submit">Enviar mensagem</button>
+                        <button type="reset">Limpar formulário</button>
+                    </div>
 
                 </form>
-
             </section>
         </main>
 

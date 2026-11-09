@@ -90,46 +90,48 @@
                 <form action="#" method="post">
                     <fieldset>
                         <legend>Dados pessoais do formando</legend>
-                    <p>
+                    <div>
                         <label for="nome-completo">Nome completo:</label> <br/>
                         <input type="text" 
                                id="nome-completo" 
                                name="nome_completo" 
-                            placeholder="EX.:Maria Fortes"/>
-                    </p>
+                            placeholder="Insira o seu nome"
+                            required/>
+                    </div> <br/>
 
-                    <p>
+                    <div>
                         <label for="email-inscricao">Endereço de Correio eletrónico:</label> <br/>
                         <input type="email"
                                id="email-inscricao"
                                name="email"
-                               placeholder="maria@exemplo.pt"/>
-                    </p>
+                               placeholder="Insira seu email"
+                               required/>
+                    </div> <br/>
 
-                    <p>
-                        <label for="telefone">Contacto telefónico</label>
+                    <div>
+                        <label for="telefone">Contacto telefónico</label> <br/>
                         <input type="tel"
                                id="telefone"
                                name="telefone"
-                               placeholder="912 345 678"/>
-                    </p>
+                               placeholder="000 000 000"/>
+                    </div> <br/>
                     </fieldset>
 
                     <fieldset>
                         <legend>Dados da formação</legend>
 
-                        <p>
+                        <div>
                             <label for="workshop">Workshop</label>
-                            <select id="workshop" name="workshop"> 
-                                <option value="">Escolha um Workshops Disponíveis</option>
+                            <select required> 
+                                <option value="">-- Escolha um Workshops Disponíveis --</option>
                                 <option value="roda">Roda de Oleiro</option>
                                 <option value="pintura">Pintura de Figurado</option>
                                 <option value="modelacao">Modelação Manual</option>
                             </select>
-                        </p>
+                        </div> <br/>
 
                         <p>Regime de frequência</p>
-                        <p>
+                        <div>
                             <input
                                 type="radio"
                                 id="pos-laboral"
@@ -145,10 +147,10 @@
                                 name="regime"
                                 value="fim-semana"/>
                             <label for="fim-semana">Fim de semana</label>
-                        </p>
+                        </div> <br/>
                         
                         <p>Dias com disponibilidade</p>
-                        <p>
+                        <div>
                             <input 
                             type="checkbox"
                             id="terca"
@@ -169,32 +171,34 @@
                             name="dias"
                             value="sabado"/>
                             <label for="sabado">Sábado</label>
-                        </p>
+                        </div>
 
                         <p>Experiência anterior ou mensagem pessoal com expectativas</p>
-                        <p>
+                        <div>
                             <label for="mensagem">Mensagem:</label> <br/>
                             <textarea 
                             id="mensagem"
                             name="mensagem"
                             rows="6"
                             cols="40"
-                            placeholder="Escreva aqui a sua mensagem..."></textarea>
+                            placeholder="Escreva aqui a sua mensagem..."
+                            maxlength="255"></textarea>
 
                             <input
                             type="checkbox"
-                            id="autorizacao_contacto"
-                            name="autorizacao_contacto"
-                            value="sim"/>
-                            <label for="autorizacao_contacto">Autorização para receção de confirmação de vaga por e-mail</label>
-                        </p>
-
-                        <p>
-                            <button type="submit">Enviar</button>
-                            <button type="reset">Limpar</button>
-                        </p>
-
+                            id="autorizacao"
+                            name="autorizacao"
+                            value="sim"
+                            required/>
+                            <label for="autorizacao">Autorização para receção de confirmação de vaga por e-mail</label>
+                        </div> <br/>
                     </fieldset>
+
+                    <div>
+                        <button type="submit">Enviar inscrição</button>
+                        <button type="reset">Limpar formulário</button>
+                    </div>
+
                 </form>
 
 
