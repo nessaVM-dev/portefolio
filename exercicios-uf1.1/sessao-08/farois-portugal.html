@@ -30,15 +30,18 @@
             <section id="destaques">
                 <h2>Destaques Costeiros:</h2>
                 <article class="cartao">
-                    <p><strong>Farol da Barra (Ilhavo, Aveiro)</strong> Erguido em 1893 na foz da Ria de Aveiro, o Farol da Barra é a torre de farol mais alta de Portugal e a segunda mais alta da Europa, elevando-se a impressionantes 62 metros de altura (com 66 metros de altitude focal). A sua escadaria em caracol possui 271 degraus de pedra e 17 degraus de ferro até à varanda de serviço, proporcionando um panorama único sobre a ria e o oceano.</p>
+                    <h3>Farol da Barra (Ilhavo, Aveiro)</h3>
+                    <p>Erguido em 1893 na foz da Ria de Aveiro, o Farol da Barra é a torre de farol mais alta de Portugal e a segunda mais alta da Europa, elevando-se a impressionantes 62 metros de altura (com 66 metros de altitude focal). A sua escadaria em caracol possui 271 degraus de pedra e 17 degraus de ferro até à varanda de serviço, proporcionando um panorama único sobre a ria e o oceano.</p>
                 </article>
 
                 <article class="cartao">
-                    <p><strong>Farol do Cabo da Roca (Sintra)</strong> Instalado no ponto mais ocidental do continente europeu ("onde a terra acaba e o mar começa"), o Farol do Cabo da Roca começou a emitir a sua luz em 1772, sendo um dos faróis mais antigos do país. Situa-se numa falésia abrupta a 165 metros acima do nível do mar, emitindo relâmpagos brancos visíveis a 26 milhas náuticas de distância.</p>
+                    <h3>Farol do Cabo da Roca (Sintra)</h3>
+                    <p>Instalado no ponto mais ocidental do continente europeu ("onde a terra acaba e o mar começa"), o Farol do Cabo da Roca começou a emitir a sua luz em 1772, sendo um dos faróis mais antigos do país. Situa-se numa falésia abrupta a 165 metros acima do nível do mar, emitindo relâmpagos brancos visíveis a 26 milhas náuticas de distância.</p>
                 </article>
 
                 <article class="cartao">
-                    <p><strong>Farol de Santa Marta (Cascais)</strong> Construído em 1868 no forte com o mesmo nome na enseada de Cascais, conjuga uma torre quadrangular azul e branca com um museu interativo dedicado à história e tecnologia dos faroleiros portugueses.</p>
+                    <h3>Farol de Santa Marta (Cascais)</h3>
+                    <p>Construído em 1868 no forte com o mesmo nome na enseada de Cascais, conjuga uma torre quadrangular azul e branca com um museu interativo dedicado à história e tecnologia dos faroleiros portugueses.</p>
                 </article>
             </section>
 
@@ -116,25 +119,25 @@
                         <legend>O formulário de reserva deve recolher:</legend>
                         
                         <div>
-                            <label for="nome">Nome completo do visitante responsável</label>
+                            <label for="nome">Nome completo do visitante responsável</label> <br/>
                             <input
                                type="text"
                                id="nome"
                                name="nome"
                                placeholder="Insira o seu nome"
                                required/>
-                        </div>
+                        </div><br/>
 
                         <div>
-                            <label for="email">Endereço de correio eletrónico</label>
+                            <label for="email">Endereço de correio eletrónico</label><br/>
                             <input
                                type="text"
                                id="email"
                                name="email"
                                placeholder="Insira o teu email"
                                required/>
-                        </div>
-                            <label for="telefone">Número de contacto telefónico nacional</label>
+                        </div><br/>
+                            <label for="telefone">Número de contacto telefónico nacional</label><br/>
                             <input
                                type="tel"
                                id="telefone"
@@ -145,47 +148,47 @@
                                required/>
 
                         <div>
-                            <label>Seleção do farol pretendido</label>
+                            <label>Seleção do farol pretendido</label><br/>
                             <select required>
                                 <option value="">-- Selecione um farol --</option>
-                                <option value="Farol da barra">Farol da Barra</ooption>
+                                <option value="Farol da barra">Farol da Barra</option>
                                 <option value="Farol do cabo">Farol do Cabo da Roca</option>
                                 <option value="Farol de santa marta">Farol de Santa Marta</option>
                                 <option value="Farol de sao vicente">Farol de São Vicente</option>
                             </select>
-                        </div>
+                        </div><br/>
                        
                         <div>
-                            <label for="data">Data pretendida para a visita</label>
+                            <label for="data">Data pretendida para a visita</label><br/>
                             <input 
-                               text="date"
+                               type="date"
                                id="data"
                                name="data"
                                required/>
-                        </div>
+                        </div><br/>
 
                         <div>
-                            <label>Período horário preferencial</label>
+                            <label>Período horário preferencial</label><br/>
 
                             <input
-                               text="radio"
-                               id="turno"
+                               type="radio"
+                               id="turno1"
                                name="resposta"
-                               value="turno"
+                               value="turno1"
                                checked/>
-                            <label for="turno">Turno das 14h00-15h30</label>
+                            <label for="turno1">Turno das 14h00-15h30</label>
 
                             <input
-                               text="radio"
-                               id="turno"
+                               type="radio"
+                               id="turno2"
                                name="resposta"
-                               value="turno"
+                               value="turno2"
                                checked/>
-                            <label for="turno">Turno das 15h30-17h00</label>
-                        </div>
+                            <label for="turno2">Turno das 15h30-17h00</label>
+                        </div><br/>
 
                         <div>
-                            <label for="participantes">Número de participante</label>
+                            <label for="participantes">Número de participante</label><br/>
                             <input
                                type="number"
                                id="participantes"
@@ -194,19 +197,57 @@
                                max="10"
                                required
                                />
-                        </div>
+                        </div><br/>
 
                         <div>
-                            <label>Necessidades específicas ou observações</label>
-                            <textarea>
-                                
-                            </textarea>
-                               
+                            <label>Necessidades específicas ou observações</label><br/>
+                            <textarea
+                                id="observacoes"
+                                name="observacoes"
+                                rows="6"
+                                cols="40"
+                                minlength="10">
+                            </textarea>    
+                        </div><br/>
+
+                        <div>
+                            <label>Confirmação obrigatória de leitura e aceitação das normas de segurança</label>
+                            <input
+                               type="checkbox"
+                               id="aceitacao"
+                               name="aceitacao"
+                               required/>
+                        </div><br/>
+
+                        <div>
+                            <button class=".botao">Enviar reserva</button>
+                            <button class=".botao .botao-secundario">Reposição do formulário</button>
                         </div>
                     </fieldset>
                 </form>
             </section>
+
+            <section id="contactos">
+                <h2>Apoio ao Visitante e Contactos Institucionais:</h2>
+                <p>Direção de Faróis — Marinha Portuguesa</p>
+                <p>Morada: Estrada do Farol, 2770-058 Paço de Arcos</p>
+                <p>
+                    CE-mail para visitas:
+                    <a href="mailto:dfarois.visitas@marinha.pt">dfarois.visitas@marinha.pt</a>
+                </p>
+                <p>
+                   Portal oficial:
+                    <a href="https://www.marinha.pt"
+                    target="_blank"
+                    rel="noreferrer noopener">Marinha Portuguesa</a>
+                </p>
+            </section>
         </main>
+
+        <footer>
+            <p>&copy; Direitos de autor: 2026 Direção de Faróis · Marinha Portuguesa</p>
+
+        </footer>
     </body>
 
 </html>
