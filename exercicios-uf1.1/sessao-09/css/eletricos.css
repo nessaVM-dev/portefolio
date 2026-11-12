@@ -15,7 +15,7 @@ header{
     text-align: center;
 }
 
-header img{
+header > img{
     display: block;
     width: 240px;
     height: 160px; 
@@ -58,7 +58,7 @@ h3{
 nav{
     margin-top: 1.25rem;
 }
-nav a {
+nav > a {
     display: inline-block;
     margin: 0.25rem;
     padding: 0.5rem 0.9rem;
