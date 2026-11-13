@@ -36,4 +36,11 @@ nav > ul > li > a {
 nav {
     width: 30%;
 }
+
+.etiquetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
  
