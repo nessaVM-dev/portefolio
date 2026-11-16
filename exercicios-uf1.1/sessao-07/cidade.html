@@ -2,6 +2,9 @@
 <html lang="pt-PT">
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Descubra Seul, capital da Coreia do Sul, uma cidade fascinante que combina tradição, tecnologia, cultura, gastronomia e modernidade."/>
+        <meta name="author" content="Vanessa"/>
         <title>Seul - Coreia do Sul</title>
 
     </head>
@@ -36,7 +39,7 @@
                 <a href="https://english.visitseoul.net/"
                    target="_blank"
                    rel="noreferrer noopener">
-                potal oficial de turismo de Seul</a>.
+                portal oficial de turismo de Seul</a>.
                </p>
                </section>
 
@@ -46,7 +49,7 @@
                 <p>Atualmente, Seul é uma cidade moderna, mas continua a preservar os seus palácios, monumentos e tradições.</p>
                 
                 <p>
-                O nome de Seul em coreano é <span lang="ko"></span>.
+                O nome de Seul em coreano é <span lang="ko">서울</span>.
                 </p>
 
                 <p>
@@ -67,7 +70,7 @@
                         <strong>Palácio Gyeongbokgung:</strong> um dos palácios reais mais importantes da Coreia do Sul.
                     </li>
                     <li>
-                        <strong>Torre N Seoul:</strong> oferece uma visita panorrâmica da cidade.
+                        <strong>Torre N Seoul:</strong> oferece uma visita panorâmica da cidade.
                     </li>
                     <li>
                         <strong>Vila Bukchon Hanok:</strong> conhecida pelas suas casas tradicionais.
@@ -88,10 +91,11 @@
                         <thead>
                             <tr>
                                 <th scope="col">Monumentos</th>
-                                <th scopr="col">Construção/Séculos</th>
+                                <th scope="col">Construção/Séculos</th>
                                 <th scope="col">Estilo</th>
                                 <th scope="col">Classificação</th>
                             </tr>
+                            </thead>
 
                             <tbody>
                                 <tr>
@@ -113,7 +117,6 @@
                                     <td>Torre de observação</td>
                                 </tr>
                             </tbody>
-                        </thead>
                     </table>
 
                 </section>
@@ -124,7 +127,7 @@
 
                 <article>
                    <blockquote>
-                        Seul é uma cidade onde a tradição e a modernidade cominham juntas.
+                        Seul é uma cidade onde a tradição e a modernidade caminham juntas.
                    </blockquote>
                    <p>Autor: Frase descritivas</p>
                 </article>
@@ -135,17 +138,66 @@
                     <p>Conhece algum lugar interessante em Seul? Partilhe a sua sugestão conosco.</p>
 
                     <form action="#" method="post">
-                        <fieldser>
+                        <fieldset>
                             <legend>A sua identificação</legend>
 
+                            <div>
                             <label for="nome">Nome:</label>
                             <input
                                 type="text"
                                 id="nome"
-                                name="nome"/>
+                                name="nome"
+                                required
+                                minlength="3
+                                maxlength=60"/>
+                            </div> <br/>
 
+                            <div>
+                            <label for="email">Correio eletrónico:</label> <br/>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required/>
+                            </div> <br/>
                             
-                        </fieldser>
+                            <div>
+                            <label for="categoria">Categoria do local:</label> <br/>
+                            <select id="categoria" name="categoria" required>
+                                <option value="">-- Escolha uma categoria --</option>
+                                <option value="restaurante">Restaurante</option>
+                                <option value="monumento">Monumento</option>
+                                <option value="praia">Praia</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            </div> <br/>
+                            
+                            <div>
+                            <label for="descricao">Descrição:</label> <br/>
+                            <textarea 
+                                id="descricao"
+                                name="descricao"
+                                required
+                                rows="10" 
+                                cols="20" 
+                                minlength="20"
+                                maxlength="800">
+                            </textarea>
+                            </div> <br/>
+                            
+                            <div>
+                            <label> <br/>
+                                <input type="checkbox"
+                                    name="autorizacao" 
+                                    required/>
+                                Autorizo a utilização da minha recomendação.
+                            </label>
+                            </div> <br/>
+
+                            <div>
+                            <button type="submit">Enviar recomendação</button>   
+                            </div>
+                        </fieldset>
                     </form>
                 </section>
         </main>
