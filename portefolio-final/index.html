@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portefólio pessoal de Ana Martins, futura programadora web em Setúbal. Apresentação, percurso de formação e projetos práticos."
+    />
+    <meta name="author" content="Ana Martins" />
+    <title>Ana Martins | Portefólio</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Fotografia (imagens/foto.svg, 160 x 160, com alt), nome num h1 e frase de apresentação -->
+      <div id="profile-photo" class="images">
+        <img 
+          src="images/foto.svg"
+          alt="Profile Photo"
+          width="100%"
+          height="100%"/>
+      </div>
+
+      <div id="photo-header">
+        <h1>Vanessa Moreira</h1>
+        <p>Futura programadora <strong>Web Full Stack</strong>, a aprender a construir sites de raiz.</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <!-- Sobre mim: h2, dois parágrafos, h3 "Competências em desenvolvimento",
+             lista class="etiquetas" e caixa aside class="curiosidade" -->
+        <h2>Sobre mim</h2>
+        <p>Sou de Praia, sou um desenvolvedor <span lang="en">front-end e back-end (Web Full Stack)</span>. Gosto de transformar ideias em aplicações que ajudem e facilitem a vida das pessoas.</p>
+        <p>Fora do computador você me encontra com um livro na mão ou com playlist rolando. Venho das Artes Gráficas, então me preocupo tanto com o visual quanto com o funcionamento.</p>
+
+        <h3>Competências em desenvolvimento</h3>
+
+        <ul class="etiquetas">
+          <li>HTML5 semântico e estruturação acessível</li>
+          <li>CSS3 com estilização externa e seletores eficientes</li>
+          <li>Controlo de versões com Git e GitHub</li>
+          <li>Atenção ao detalhe e organização de código</li>
+        </ul>
+      </section>
+
+      <section>
+        <!-- Apresentação em vídeo: h2 e figure com video (controls, poster,
+             source e track com as legendas) e figcaption -->
+      </section>
+
+      <section id="percurso" class="mt-11 flex flex-col gap-10">
+        <!-- O meu percurso: h2, parágrafo e tabela dentro de
+             div class="tabela-responsiva" -->
+        <h2>O meu Percurso</h2>
+
+        <table class="outline outline-2">
+          <thead class="border-2">
+            <tr>
+              <th class="p-2">Período</th>
+              <th class="p-2">Área / Função</th>
+              <th class="p-2">Entidade</th>
+              <th class="p-2">Local</th>
+            </tr>
+          </thead>
+
+          <tbody class="text-center">
+            <tr>
+              <td>2026 - Presente</td>
+              <td>Curso de Desenvolvimento Web Full-Stack</td>
+              <td>Labanta Academia</td>
+              <td>Praia-ASA</td>
+            </tr>
+
+            <tr>
+              <td>2022 - 2024</td>
+              <td>Ensino Secundário</td>
+              <td>Escola Secundário Polivalente Cesaltina Ramos</td>
+              <td>Praia-ASA</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <!-- O que dizem de mim: h2 e article class="cartao" com blockquote -->
+      </section>
+
+      <section>
+        <!-- Contacto rápido: h2, parágrafo e div class="acoes" com dois botões -->
+      </section>
+    </main>
+
+    <footer>
+      <!-- © 2026 e o vosso nome; lista class="redes" com os links E-mail e GitHub -->
+    </footer>
+  </body>
+</html>
