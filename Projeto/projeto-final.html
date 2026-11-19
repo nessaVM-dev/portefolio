@@ -1,145 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-PT">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content=""/>
-        <meta name="author" content="Rui Costa"/>
-        <title>Rui Costa - Portefolio</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Rui Costa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Rui Costa - Portefolio</title>
+  </head>
 
-    <body>
-        <header>
-            <h2>Rui Costa</h2>
-            <p>Fotografia • Porto</p>
+  <body>
+    <header>
+      <div id="f">
+        <h2>Rui Costa</h2>
+        <p>Fotografia • Porto</p>
+      </div>
+      <div id="g">
+        <nav id="menu">
+          <a href="#">Início</a>
+          <a href="#">Serviços</a>
+          <a href="#">Contactos</a>
+        </nav>
+        <button type="submit">Disponibilidade</button>
 
-            <nav id="menu">
-                <a href="#">Início</a>
-                <a href="#">Serviços</a>
-                <a href="#">Contactos</a>
-            </nav>
-            <button type="submit">Disponibilidade</button>
-        </header>
+        <img src="img/retrato-rui-costa.jpg" alt="Fotografia de perfil" />
+      </div>
+    </header>
 
-        <main>
-            <div>
-                <img src="images/retrato-rui-costa.jpg" alt="Fotografia de perfil"/>
-                <h1>Rui Costa</h1>
-                <p>Fotógrafo de <strong>casamentos e paisagens</strong>, no Porto.</p>
-            </div>
-            <section>
-                <nav>
-                    <a href="#inicio">Início</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#servicos">Serviços</a>
-                    <a href="#contactos">Contactos</a>
-                </nav>
-            </section>
+    <main>
+      <section id="introducao">
+        <div id="photo1">
+          <img src="img/retrato-rui-costa.jpg" alt="Fotografia de perfil" />
+        </div>
 
-            <section id="inicio">
-                <img src="images/douro-vinhateiro.jpg" alt="Fotografia da paisagem do douro vinhateiro"/>
-
-            </section>
-
-            <section>
-                <h1>Sobre mim</h1>
-                <p>Comecei a fotografar aos 15 anos, com a máquina do meu avô.</p>
-                <p>Hoje fotografo pessoas e lugares com uma <abbr></abbr>DSLR, sempre com luz natural.</p>
-
-                <h3>Especialidades</h3>
-                <ul>
-                    <li>Fotografia documental de casamento</li>
-                    <li>Sessões de família ao ar livre</li>
-                    <li>Paisagens naturais do Norte de Portugal</li>
-                    <li>Impressão artística em papéis de algodão</li>
-                </ul>
-
-                <article>
-                    <h3>Curiosidade</h3>
-                    <p><strong>Sabiam que...</strong> <br> a primeira fotografia da história foi tirada em 1826, por Joseph Nicéphore Niépce, e demorou 8 horas de exposição.</p>
-                </article>
-
-                <img src="images/papel-algodao-arquivo.jpg" alt="Fotografia de fotos de cadamento"/>
-            </section>
-
-            <section id="servicos">
-                <h1>Exposições e Reconhecimento</h1>
-                <p>Alguns dos momentos mais marcantes do meu percurso fotográfico:</p>
-
-                <table>
-                    <caption>
-                        Histórico de exposições e distinções de Rui Costa
-                    </caption>
-
-                    <thead>
-                        <tr>
-                            <th scope="col">Ano</th>
-                            <th scope="col">Exposição/Distinção</th>
-                            <th scope="col">Galeria/Organização</th>
-                            <th scope="col">Cidade</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>2025</td>
-                            <td>Exposição Individual "Luzes do Douro"</td>
-                            <td>Galeria Municipal</td>
-                            <td>Porto</td>
-                        </tr>
-
-                        <tr>
-                            <td>2024</td>
-                            <td>Menção Honrosa em Fotografia de Paisagem</td>
-                            <td>Festival de Fotografia do Norte</td>
-                            <td>Braga</td>
-                        </tr>
-
-                        <tr>
-                            <td>2022</td>
-                            <td>Exposição Coletiva "Gentes do Norte"</td>
-                            <td>Centro Cultural Regional</td>
-                            <td>Guimarães</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section>
-                <h2>O que dizem os clientes</h2>
-                <p><em>«As fotografias do nosso casamento são o nosso maior tesouro.»</em> <br> 
-                        - Marta e Pedro, Casaram em 2025</p>
-                <img src="images/marta-pedro-casamento.jpg" alt="Fotografia de Marta e Pedro de casamento"/>
-                
-            </section>
-
-            <section id="contactos">
-                <h2>Contacto rápido</h2>
-                <p>Têm dúvidas sobre as datas disponíveis? Enviem um e-mail para <a href="rui.costa@exemplo.pt">rui.costa@exemplo.pt </a> ou peçam um orçamento através da</p>
-
-                <div>
-                <button type="submit">Página de Contactos</button> <br/>
-                <button type="submit">Enviar Mensagem Direta</button>
-                <button type="submit">Pedir Orçamento 2026/27</button>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <h3>Rui Costa - Fotografia</h3>
-            <p>Luz atlântica, granito e narrativa documental. <br/> Casamentos e paisagem autoral no Porto e Douro.</p>
-            
-            <h6>Estúdio</h6>
-            <p>Rua de Miguel Bombarda, Porto <br/>
-                <a href="atelier@ruicosta.pt">atelier@ruicosta.pt</a>
+        <div id="introducaonome">
+          <h1>Rui Costa</h1>
+          <p>Fotógrafo de <strong>casamentos e paisagens</strong>, no Porto.</p>
+          <nav>
+            <a href="#introducao">Início</a>/ <a href="#sobre">Sobre</a>/
+            <a href="#curiculo">Serviços</a>/
+            <a href="#contactos">Contactos</a>
+          </nav>
+        </div>
+        <div id="photo-paisagem">
+          <img
+            src="img/douro-vinhateiro.jpg"
+            alt="Fotografia da paisagem do douro vinhateiro"
+          />
+        </div>
+      </section>
+      <section class="biografia" id="sobre">
+        <div id="first">
+          <div>
+            <h6>01 / BIOGRAFIA</h6>
+            <h2>Sobre mim</h2>
+            <p>Comecei a fotografar aos 15 anos, com a máquina do meu avô.</p>
+            <p>
+              Hoje fotografo pessoas e lugares com uma <abbr title="Camara Reflex Digital">DSLR</abbr>, sempre
+              com luz natural.
+            </p>
+          </div>
+          <div>
+            <h3>Especialidades</h3>
+            <ul>
+              <li class="cartao-especialidade">
+                Fotografia documental de casamento
+              </li>
+              <li class="cartao-especialidade">
+                Sessões de família ao ar livre
+              </li>
+              <li class="cartao-especialidade">
+                Paisagens naturais do Norte de Portugal
+              </li>
+              <li class="cartao-especialidade">
+                Impressão artística em papéis de algodão
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="second">
+          <div class="cartao-curiosidade">
+            <h3>♧ CURIOSIDADE</h3>
+            <h4>SABIAM QUE...</h4>
+            <p>
+              a primeira fotografia da história foi tirada em 1826, por Joseph
+              Nicéphore Niépce, e demorou 8 horas de exposição.
             </p>
 
-            <h6>Galeria & Editorial</h6>
-            <p>Disponibilidade Limitada <br/> 2026/2027</p>
+            <div class="rodape-curiosidade">
+              <span>Le Gras • França</span>
+              <span>1826</span>
+            </div>
+          </div>
+          <div>
+            <img
+              src="img/papel-algodao-arquivo.jpg"
+              alt="Fotografia de fotos de cadamento"
+            />
+          </div>
+        </div>
+      </section>
 
-            <p>&copy; 2026 Rui Costa. Todos os direitos reservados.</p>
-            <p>Porto • Portugal</p>
-        </footer>
-    </body>
+      <section id="curiculo">
+        <div id="titulocuriculo">
+          <p>02 / CURRÍCULO • ARQUIVO</p>
+          <h2>Exposições e Reconhecimento</h2>
+          <p>Alguns dos momentos mais marcantes do meu percurso fotográfico:</p>
+        </div>
+        <div id="tabela">
+          <table>
+            <caption>
+              Histórico de exposições e distinções de Rui Costa
+            </caption>
 
+            <thead>
+              <tr>
+                <th scope="col">Ano</th>
+                <th scope="col">Exposição/Distinção</th>
+                <th scope="col">Galeria/Organização</th>
+                <th scope="col">Cidade</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td>Exposição Individual "Luzes do Douro"</td>
+                <td>Galeria Municipal</td>
+                <td>Porto</td>
+              </tr>
+
+              <tr>
+                <td>2024</td>
+                <td>Menção Honrosa em Fotografia de Paisagem</td>
+                <td>Festival de Fotografia do Norte</td>
+                <td>Braga</td>
+              </tr>
+
+              <tr>
+                <td>2022</td>
+                <td>Exposição Coletiva "Gentes do Norte"</td>
+                <td>Centro Cultural Regional</td>
+                <td>Guimarães</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="testemunho">
+        <div id="titulo-testemunho">
+          <span>03 / TESTEMUNHO</span>
+          <h2>O que dizem os clientes</h2>
+        </div>
+
+        <div class="cartao-testemunho">
+          <span class="aspas">99 </span>
+
+          <p class="citacao">
+            «As fotografias do nosso casamento são o nosso maior tesouro.»
+          </p>
+
+          <div class="cliente">
+            <img
+              src="img/marta-pedro-casamento.jpg"
+              alt="Fotografia de Marta e Pedro"
+            />
+            <span>— Marta e Pedro, casaram em 2025</span>
+          </div>
+
+          <div class="local-testemunho">
+            <span>Quinta da Gricha</span>
+            <span>•</span>
+            <span>Douro</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contactos">
+        <span class="subtitulo">04 / AGENDAMENTO</span>
+
+        <h2>Contacto rápido</h2>
+
+        <p>
+          Têm dúvidas sobre as datas disponíveis? Enviem um e-mail para
+          <a href="mailto:rui.costa@exemplo.pt"> rui.costa@exemplo.pt </a>
+          ou peçam um orçamento através da
+        </p>
+
+        <div class="botao-contactos">
+          <button type="button">Página de Contactos</button>
+        </div>
+
+        <div class="botoes-principais">
+          <button type="button"><img src="mail.svg" alt="email">Enviar Mensagem Direta</button>
+          <button type="button"><img src="calendar.svg" alt="calendar imagen"  class="iconecolor">Pedir Orçamento 2026/27</button>
+        </div>
+
+        <p class="informacoes-contactos">
+          Resposta em menos de 24 horas &nbsp; • &nbsp; Atelier em Miguel
+          Bombarda
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-conteudo">
+        <div class="footer-sobre">
+          <h3>Rui Costa — Fotografia</h3>
+          <p>
+            Luz atlântica, granito e narrativa documental. Casamentos e paisagem
+            autoral no Porto e Douro.
+          </p>
+        </div>
+
+        <div class="footer-estudio">
+          <h6>Estúdio</h6>
+          <p>Rua de Miguel Bombarda, Porto</p>
+          <a href="mailto:atelier@ruicosta.pt"> atelier@ruicosta.pt </a>
+        </div>
+
+        <div class="footer-galeria">
+          <h6>Galeria & Editorial</h6>
+          <p>Disponibilidade Limitada 2026/2027</p>
+        </div>
+      </div>
+
+      <div class="footer-inferior">
+        <p>© 2026 Rui Costa. Todos os direitos reservados.</p>
+        <p>Porto • Portugal</p>
+      </div>
+    </footer>
+  </body>
 </html>

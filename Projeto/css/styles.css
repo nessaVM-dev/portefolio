@@ -1,0 +1,1011 @@
+/* ==========================================================================
+   1. VARIÁVEIS E CORES DO SISTEMA (DESIGN TOKENS)
+   ========================================================================== */
+:root {
+  /* Superfícies */
+  --surface: #faf9f6;
+  --surface-dim: #dbdad7;
+  --surface-bright: #faf9f6;
+  --surface-container-lowest: #ffffff;
+  --surface-container-lowest1: #ffffffb2;
+  --surface-container-low: #f4f3f1;
+  --surface-container: #efeeeb;
+  --surface-container-high: #e9e8e5;
+  --surface-container-highest: #e3e2e0;
+  --section-background-1: #eef1f4;
+  --section-background-2: #fafbfc;
+
+  /* Textos e contornos */
+  --on-surface: #1a1c1a;
+  --on-surface-variant: #4a4640;
+  --inverse-surface: #2f312f;
+  --inverse-on-surface: #f2f1ee;
+  --outline: #7b766f;
+  --outline-variant: #ccc6bd;
+  --surface-tint: #605e5c;
+
+  /* Cores principais */
+  --primary: #000000;
+  --on-primary: #ffffff;
+  --primary-container: #1c1b1a;
+  --on-primary-container: #868382;
+  --inverse-primary: #cac6c4;
+
+  /* Cores secundárias */
+  --secondary: #825338;
+  --on-secondary: #ffffff;
+  --secondary-container: #fdbe9d;
+  --on-secondary-container: #794b31;
+
+  /* Cores terciárias */
+  --tertiary: #000000;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #131e11;
+  --on-tertiary-container: #7a8875;
+
+  /* Cores de erro */
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+
+  /* Variações da cor principal */
+  --primary-fixed: #e6e2df;
+  --primary-fixed-dim: #cac6c4;
+  --on-primary-fixed: #1c1b1a;
+  --on-primary-fixed-variant: #484645;
+
+  /* Variações da cor secundária */
+  --secondary-fixed: #ffdbca;
+  --secondary-fixed-dim: #f7b997;
+  --on-secondary-fixed: #321201;
+  --on-secondary-fixed-variant: #673c23;
+
+  /* Variações da cor terciária */
+  --tertiary-fixed: #d9e7d1;
+  --tertiary-fixed-dim: #bdcbb6;
+  --on-tertiary-fixed: #131e11;
+  --on-tertiary-fixed-variant: #3e4a3a;
+
+  /* Fundo */
+  --background: #faf9f6;
+  --on-background: #1a1c1a;
+  --surface-variant: #e3e2e0;
+}
+
+/* ==========================================================================
+   2. ESTILOS BASE E TIPOGRAFIA GERAL / CRISTIANO RONALDO 
+   ========================================================================== */
+body {
+  background-color: var(--surface);
+}
+
+h1 {
+  color: var(--on-surface);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary);
+}
+
+h6 {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0;
+}
+
+p {
+  color: var(--on-surface-variant);
+}
+
+/* ==========================================================================
+   3. CABEÇALHO (HEADER) E MENU DE NAVEGAÇÃO / THE GREATEST OF ALL TIME
+   ========================================================================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface);
+  padding: 15px 60px;
+  min-height: 50px;
+}
+
+#f {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#f h2 {
+  font-family: "Newsreader", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--on-surface);
+  margin: 0;
+}
+
+#f p {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#g {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+#menu a {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--on-surface-variant);
+}
+
+#menu a:hover {
+  color: var(--secondary);
+}
+
+header button {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: var(--secondary);
+}
+
+header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   4. SECÇÃO INTRODUÇÃO (#introducao) GOAT/BOAT/2008
+   ========================================================================== */
+#introducao {
+  background-color: var(--section-background-2);
+}
+
+#introducao h1 {
+  font-family: "Newsreader", serif;
+  font-size: 55px;
+  font-weight: 400;
+}
+
+#introducao p {
+  padding-bottom: 30px;
+}
+
+#photo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#photo1 img {
+  width: 10%;
+  border-radius: 10px;
+}
+
+#introducaonome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#introducaonome nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Manrope", serif;
+}
+
+#introducaonome nav a {
+  text-decoration: none;
+  color: var(--on-surface-variant);
+}
+#introducaonome nav a:hover {
+  color: var(--secondary);
+}
+
+#photo-paisagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 45px;
+}
+
+#photo-paisagem img {
+  border-radius: 3px;
+  width: 100%;
+}
+
+/* ==========================================================================
+   5. SECÇÃO BIOGRAFIA / SOBRE (.biografia / #sobre) / REAL MADRID
+   ========================================================================== */
+.biografia {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--surface-container-low);
+  padding: 64px 100px;
+  gap: 40px;
+}
+
+/* --- Coluna Esquerda (#first): Texto e Especialidades --- */
+#first {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#first h2 {
+  font-family: "Newsreader", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--on-surface);
+  margin: 10px 0 20px;
+}
+
+#first p {
+  font-family: "Newsreader", serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin: 0 0 15px;
+}
+
+.biografia div ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0;
+}
+
+.cartao-especialidade {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--surface-container-lowest1);
+  border-radius: 3px;
+  padding: 15px;
+}
+
+/* --- Coluna Direita (#second): Curiosidade e Imagem --- */
+#second {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.biografia div img {
+  width: 100%;
+}
+
+.cartao-curiosidade {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  background-color: var(--surface-container-lowest1);
+  border-radius: 8px;
+  padding: 36px;
+}
+
+.cartao-curiosidade h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.cartao-curiosidade h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.cartao-curiosidade p {
+  font-family: "Newsreader", serif;
+  font-size: 24px;
+  line-height: 1.35;
+  font-style: italic;
+  color: var(--on-surface);
+  margin: 0;
+}
+
+.rodape-curiosidade {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  color: var(--on-surface-variant);
+}
+
+/* ==========================================================================
+   6. SESSAO CURICULO / TABELAS /CR7
+   ========================================================================== */
+#curiculo {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--surface);
+  padding: 64px 100px;
+  gap: 36px;
+}
+#titulocuriculo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#titulocuriculo p:first-child {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0;
+}
+#titulocuriculo h2 {
+  font-family: "Newsreader", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--on-surface);
+  margin: 0;
+}
+#titulocuriculo p:last-child {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  color: var(--on-surface-variant);
+  margin: 0;
+}
+#tabela {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  background-color: var(--surface-container-lowest);
+}
+#tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Manrope", sans-serif;
+}
+#tabela caption {
+  caption-side: top;
+  text-align: left;
+  background-color: var(--surface-container-low);
+  color: var(--on-surface-variant);
+  padding: 18px 25px;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+#tabela th {
+  background-color: var(--surface-container);
+  color: var(--on-surface);
+  padding: 18px 25px;
+
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+#tabela td {
+  padding: 22px 25px;
+  font-size: 15px;
+  color: var(--on-surface-variant);
+}
+#tabela td:first-child {
+  font-family: "Newsreader", serif;
+  font-size: 26px;
+  color: var(--secondary);
+}
+#tabela td:nth-child(2) {
+  color: var(--on-surface);
+}
+#tabela td:last-child,
+#tabela th:last-child {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#tabela tbody tr:hover {
+  background-color: var(--surface-container-low);
+}
+/* ==========================================================================
+   7. SESSAO TESTEMUNHO / SO ISSO SIUUUU 
+   ========================================================================== */
+#testemunho {
+  background-color: var(--surface-container-low);
+  padding: 64px 20px;
+  text-align: center;
+}
+
+#titulo-testemunho {
+  margin-bottom: 48px;
+}
+#titulo-testemunho span {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+}
+#titulo-testemunho h2 {
+  font-family: "Newsreader", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--on-surface);
+  margin: 12px 0 0;
+}
+.cartao-testemunho {
+  background-color: var(--surface-container-lowest1);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+  padding: 64px 40px;
+}
+.aspas {
+  font-family: "Newsreader", serif;
+  font-size: 25px;
+  color: var(--secondary);
+}
+.citacao {
+  font-family: "Newsreader", serif;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--on-surface);
+  max-width: 750px;
+  margin: 20px auto 30px;
+}
+.cliente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.cliente img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  object-fit: cover; /* cz li e ta sirbe pa ca dexa foto deforma de acordo cu researchs*/
+}
+.cliente span {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--on-surface-variant);
+}
+.local-testemunho {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 35px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--on-surface-variant);
+
+  /* ==========================================================================
+   8. SESSAOCONTACTOS / MUCHAS GRACIAS AFICIONN
+========================================================================== */
+}
+#contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+  background-color: var(--surface-container);
+  max-width: 800px;
+  margin: 64px auto;
+  padding: 64px 36px;
+  border-radius: 8px;
+}
+#contactos .subtitulo {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+#contactos h2 {
+  font-family: "Newsreader", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--on-surface);
+  margin: 0;
+}
+#contactos p {
+  font-family: "Newsreader", serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 600px;
+  margin: 0;
+}
+#contactos p a {
+  color: var(--on-surface);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary);
+  text-underline-offset: 4px;
+}
+.botao-contactos,
+.botoes-principais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#contactos button {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  padding: 15px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.botao-contactos button {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+.botoes-principais button:first-child {
+  background-color: var(--surface-container-lowest);
+  color: var(--on-surface);
+}
+.botoes-principais button:last-child {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+#contactos button:hover {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+#contactos .informacoes-contactos {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  max-width: none;
+  margin-top: 20px;
+}
+.iconecolor{
+  filter: invert(100%);
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+button img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* ==========================================================================
+   9. SESSAO PEZINHO NA REGUA / ESTO E PARA LOS OTROS SIUUUUUUUUUUUUUUUUU
+========================================================================== */
+
+footer {
+  background-color: var(--surface-container-low);
+  padding: 64px;
+  color: var(--on-surface);
+}
+.footer-conteudo {
+  display: grid;
+  grid-template-columns: 5fr 4fr 3fr;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 64px;
+}
+.footer-sobre h3 {
+  font-family: "Newsreader", serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+.footer-sobre p {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--on-surface-variant);
+  max-width: 400px;
+  margin: 0;
+}
+.footer-estudio h6,
+.footer-galeria h6 {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 10px;
+}
+.footer-estudio p,
+.footer-galeria p {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+  color: var(--on-surface-variant);
+}
+.footer-estudio a {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+}
+.footer-estudio a:hover {
+  color: var(--secondary);
+}
+.footer-galeria {
+  text-align: right;
+}
+.footer-inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-inferior p {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--on-surface-variant);
+  margin: 0;
+}
+/* ==========================================================================
+   9. KELI E PA RESPONSIVIDADE/ GOLO DE QUASE MEIO CAMPO E NORMAL 
+========================================================================== */
+
+/* EVITA PADING DE AUMENTA LARGURA DMAS */
+* {
+  box-sizing: border-box;
+}
+
+/* PA FT CA PASSA ECRAM */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*TABLETS - 768px TI 1023px */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 15px 32px;
+  }
+
+  #g {
+    gap: 15px;
+  }
+
+  #menu {
+    gap: 18px;
+  }
+  #photo1 img {
+    width: 130px;
+  }
+
+  #photo-paisagem {
+    padding: 36px 32px;
+  }
+  #biografia {
+    padding: 48px 32px;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  #first {
+    width: 55%;
+    min-width: 0;
+  }
+  #second {
+    width: 45%;
+    min-width: 0;
+  }
+  #first h2 {
+    font-size: 40px;
+  }
+  .cartao-curiosidade {
+    padding: 24px;
+  }
+  .cartao-curiosidade p {
+    font-size: 22px;
+  }
+  #curiculo {
+    padding: 48px 32px;
+  }
+  #titulocuriculo h2 {
+    font-size: 40px;
+  }
+  #tabela {
+    overflow-x: auto;
+  }
+  #testemunho {
+    padding: 48px 32px;
+  }
+  .cartao-testemunho {
+    padding: 48px 32px;
+  }
+  #contactos {
+    margin: 48px 32px;
+    padding: 48px 32px;
+  }
+  footer {
+    padding: 48px 32px;
+  }
+  .footer-conteudo {
+    gap: 20px;
+  }
+}
+
+/* MOVEL TI 767px */
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  #f {
+    align-items: center;
+    text-align: center;
+  }
+  #g {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+  #menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  #menu a {
+    font-size: 11px;
+  }
+  header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  #introducao {
+    padding: 20px;
+  }
+  #photo1 img {
+    width: 120px;
+    border-radius: 50%;
+  }
+  #introducaonome {
+    text-align: center;
+  }
+  #introducaonome h1 {
+    font-size: 44px;
+  }
+  #introducaonome nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+  }
+  #photo-paisagem {
+    padding: 20px;
+  }
+  #photo-paisagem img {
+    width: 100%;
+  }
+  #biografia {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 36px 20px;
+    gap: 30px;
+  }
+  #first,
+  #second {
+    width: 100%;
+    min-width: 0;
+  }
+  #first h2 {
+    font-size: 32px;
+  }
+  #first p {
+    font-size: 18px;
+  }
+  #biografia div ul {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .cartao-especialidade {
+    width: 100%;
+    padding: 15px;
+  }
+  .cartao-curiosidade {
+    padding: 24px;
+  }
+  .cartao-curiosidade p {
+    font-size: 24px;
+  }
+  #curiculo {
+    padding: 36px 20px;
+    gap: 24px;
+  }
+  #titulocuriculo h2 {
+    font-size: 32px;
+  }
+  #tabela {
+    width: 100%;
+    overflow-x: auto;
+  }
+  #tabela table {
+    min-width: 650px;
+  }
+  #testemunho {
+    padding: 36px 20px;
+  }
+  #titulo-testemunho h2 {
+    font-size: 32px;
+  }
+  .cartao-testemunho {
+    padding: 36px 20px;
+  }
+  .citacao {
+    font-size: 24px;
+  }
+  .cliente {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .local-testemunho {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  #contactos {
+    margin: 36px 20px;
+    padding: 36px 20px;
+    gap: 20px;
+  }
+  #contactos h2 {
+    font-size: 32px;
+  }
+  #contactos p {
+    font-size: 18px;
+  }
+  .botao-contactos,
+  .botoes-principais {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  #contactos button {
+    width: 100%;
+  }
+  #contactos .informacoes-contactos {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  footer {
+    padding: 36px 20px;
+  }
+  .footer-conteudo {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .footer-galeria {
+    text-align: left;
+  }
+  .footer-inferior {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/*  MOVEL MAS PIKINOTE TI 400px */
+
+@media (max-width: 400px) {
+  #menu {
+    gap: 10px;
+  }
+  #menu a {
+    font-size: 10px;
+  }
+  #introducaonome h1 {
+    font-size: 36px;
+  }
+  #first h2,
+  #titulocuriculo h2,
+  #titulo-testemunho h2,
+  #contactos h2 {
+    font-size: 30px;
+  }
+  .cartao-curiosidade p,
+  .citacao {
+    font-size: 22px;
+  }
+  .cartao-testemunho {
+    padding: 28px 16px;
+  }
+  #contactos {
+    padding: 28px 16px;
+  }
+}
