@@ -1,176 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-PT">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portefólio pessoal de Nessa Moreira, futura programadora web. Apresentação, percurso de formação e projetos práticos.">
-    <meta name="author" content="Nessa Moreira">
-    <title>Nessa Moreira | Portefólio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portefólio pessoal de Ana Martins, futura programadora web em Setúbal. Apresentação, percurso de formação e projetos práticos."
+    />
+    <meta name="author" content="Ana Martins" />
+    <title>Ana Martins | Portefólio</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
 
-    <!-- Tipo de letra Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <body>
+    <header>
+      <!-- Fotografia (imagens/foto.svg, 160 x 160, com alt), nome num h1 e frase de apresentação -->
+      <div id="profile-photo" class="images">
+        <img 
+          src="images/foto.svg"
+          alt="Profile Photo"
+          width="100%"
+          height="100%"/>
+      </div>
 
-    <!-- Ficheiro CSS externo -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+      <div id="photo-header">
+        <h1>Vanessa Moreira</h1>
+        <p>Futura programadora <strong>Web Full Stack</strong>, a aprender a construir sites de raiz.</p>
+      </div>
 
-<body>
-    <!-- CABEÇALHO -->
-    <header class="cabecalho">
-        <div class="apresentacao">
-            <img
-                src="imagens/foto.svg"
-                alt="Ilustração do rosto de Nessa Moreira, a sorrir"
-                class="foto-perfil"
-            >
-
-            <div class="identificacao">
-                <h1>Nessa Moreira</h1>
-                <p><span>Futura programadora web</span>, a aprender a construir sites de raiz.</p>
-            </div>
-        </div>
-
-        <!-- MENU DE NAVEGAÇÃO -->
-        <nav aria-label="Navegação principal">
-            <ul class="menu">
-                <li><a href="index.html" class="ativo">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
     <main>
-        <!-- SECÇÃO 1: SOBRE MIM -->
-        <section id="sobre-mim" class="secao">
-            <h2>Sobre mim</h2>
+      <section>
+        <!-- Sobre mim: h2, dois parágrafos, h3 "Competências em desenvolvimento",
+             lista class="etiquetas" e caixa aside class="curiosidade" -->
+        <h2>Sobre mim</h2>
+        <p>Sou de Praia, sou um desenvolvedor <span lang="en">front-end e back-end (Web Full Stack)</span>. Gosto de transformar ideias em aplicações que ajudem e facilitem a vida das pessoas.</p>
+        <p>Fora do computador você me encontra com um livro na mão ou com playlist rolando. Venho das Artes Gráficas, então me preocupo tanto com o visual quanto com o funcionamento.</p>
 
-            <div class="texto-sobre">
-                <p>Sou de Setúbal e trabalhei dez anos no comércio, sempre ao balcão.</p>
-                <p>Em 2026 decidi mudar de vida e aprender a programar: quero ser programadora <span class="destaque">full-stack</span>.</p>
-            </div>
+        <h3>Competências em desenvolvimento</h3>
 
-            <div class="competencias">
-                <h3>Competências em desenvolvimento</h3>
+        <ul class="etiquetas">
+          <li>HTML5 semântico e estruturação acessível</li>
+          <li>CSS3 com estilização externa e seletores eficientes</li>
+          <li>Controlo de versões com Git e GitHub</li>
+          <li>Atenção ao detalhe e organização de código</li>
+        </ul>
+      </section>
 
-                <ul class="lista-competencias">
-                    <li>HTML5 semântico e estruturação acessível</li>
-                    <li>CSS3 com estilização externa e seletores eficientes</li>
-                    <li>Controlo de versões com Git e GitHub</li>
-                    <li>Atenção ao detalhe e organização de código</li>
-                    <li>Comunicação e trabalho em equipa</li>
-                </ul>
-            </div>
+      <section>
+        <!-- Apresentação em vídeo: h2 e figure com video (controls, poster,
+             source e track com as legendas) e figcaption -->
+      </section>
 
-            <aside class="curiosidade">
-                <p><strong>Sabiam que…</strong> o primeiro site da história foi publicado em 1991, no CERN, por Tim Berners-Lee.</p>
-            </aside>
-        </section>
+      <section id="percurso" class="mt-11 flex flex-col gap-10">
+        <!-- O meu percurso: h2, parágrafo e tabela dentro de
+             div class="tabela-responsiva" -->
+        <h2>O meu Percurso</h2>
 
-        <!-- SECÇÃO 2: VÍDEO DE APRESENTAÇÃO -->
-        <section id="video-apresentacao" class="secao">
-            <h2>Apresentação em vídeo</h2>
+        <table class="outline outline-2">
+          <thead class="border-2">
+            <tr>
+              <th class="p-2">Período</th>
+              <th class="p-2">Área / Função</th>
+              <th class="p-2">Entidade</th>
+              <th class="p-2">Local</th>
+            </tr>
+          </thead>
 
-            <figure class="video-figura">
-                <div class="video-caixa">
-                    <video controls poster="imagens/video-capa.jpg">
-                        <source src="video/apresentacao.mp4" type="video/mp4">
-                        <track
-                            src="video/apresentacao.vtt"
-                            kind="subtitles"
-                            srclang="pt"
-                            label="Português"
-                            default
-                        >
-                        O seu navegador não suporta a reprodução deste vídeo.
-                    </video>
-                </div>
+          <tbody class="text-center">
+            <tr>
+              <td>2026 - Presente</td>
+              <td>Curso de Desenvolvimento Web Full-Stack</td>
+              <td>Labanta Academia</td>
+              <td>Praia-ASA</td>
+            </tr>
 
-                <figcaption>Em 9 segundos: quem sou e o que procuro (com legendas).</figcaption>
-            </figure>
-        </section>
+            <tr>
+              <td>2022 - 2024</td>
+              <td>Ensino Secundário</td>
+              <td>Escola Secundário Polivalente Cesaltina Ramos</td>
+              <td>Praia-ASA</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-        <!-- SECÇÃO 3: PERCURSO -->
-        <section id="percurso" class="secao">
-            <h2>O meu percurso</h2>
-            <p class="introducao-tabela">O meu caminho profissional e as etapas de formação que me trouxeram até aqui:</p>
+      <section>
+        <!-- O que dizem de mim: h2 e article class="cartao" com blockquote -->
+      </section>
 
-            <div class="tabela-container">
-                <table>
-                    <caption>Percurso formativo e profissional de Nessa Moreira</caption>
-
-                    <thead>
-                        <tr>
-                            <th scope="col">Período</th>
-                            <th scope="col">Área / Função</th>
-                            <th scope="col">Entidade</th>
-                            <th scope="col">Local</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>2026 – Presente</td>
-                            <td>Curso de Desenvolvimento Web Full-Stack</td>
-                            <td>Formação Profissional</td>
-                            <td>Setúbal</td>
-                        </tr>
-                        <tr>
-                            <td>2016 – 2026</td>
-                            <td>Comércio e atendimento ao público</td>
-                            <td>Loja Central</td>
-                            <td>Setúbal</td>
-                        </tr>
-                        <tr>
-                            <td>2013 – 2016</td>
-                            <td>Ensino Secundário</td>
-                            <td>Escola Secundária de Bocage</td>
-                            <td>Setúbal</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- SECÇÃO 4: TESTEMUNHO -->
-        <section id="testemunho" class="secao">
-            <h2>O que dizem de mim</h2>
-
-            <article class="cartao-testemunho">
-                <blockquote>
-                    “A Nessa resolve qualquer problema com calma e com um sorriso.”
-                </blockquote>
-                <cite>— Carla Sousa, gerente da loja onde a Nessa trabalhou</cite>
-            </article>
-        </section>
-
-        <!-- SECÇÃO 5: CONTACTO RÁPIDO -->
-        <section id="contacto-rapido" class="secao">
-            <h2>Contacto rápido</h2>
-            <p>Estou sempre disponível para trocar ideias ou conversar sobre novas oportunidades.</p>
-
-            <div class="botoes-contacto">
-                <a href="mailto:nessa.moreira@exemplo.pt" class="botao botao-principal">Enviar e-mail</a>
-                <a href="contactos.html#formulario-contacto" class="botao botao-secundario">Página de Contactos</a>
-            </div>
-        </section>
+      <section>
+        <!-- Contacto rápido: h2, parágrafo e div class="acoes" com dois botões -->
+      </section>
     </main>
 
-    <!-- RODAPÉ -->
-    <footer class="rodape">
-        <div class="rodape-conteudo">
-            <p>&copy; 2026 Nessa Moreira</p>
-
-            <ul>
-                <li><a href="mailto:nessa.moreira@exemplo.pt">E-mail</a></li>
-                <li>
-                    <a href="https://github.com/nessa-moreira-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </li>
-            </ul>
-        </div>
+    <footer>
+      <!-- © 2026 e o vosso nome; lista class="redes" com os links E-mail e GitHub -->
     </footer>
-</body>
+  </body>
 </html>

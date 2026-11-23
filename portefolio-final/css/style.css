@@ -1,594 +1,151 @@
-/* ========================================================
-   ARQUIVO DE ESTILOS: style.css (Para Iniciantes)
-   Aqui estilizamos o HTML para deixá-lo moderno, profissional 
-   e elegante, inspirado no estilo Dark & Roxo das fotos!
-======================================================== */
+/* ==========================================================================
+   Portefólio Pessoal — Ana Martins
+   Folha de Estilos Principal (mobile-first: primeiro o telemóvel,
+   depois os ecrãs maiores, na secção 7)
+   As cores e as medidas que se repetem estão em variáveis, no :root.
+   ========================================================================== */
 
-/* --------------------------------------------------------
-   1. VARIÁVEIS DE CORES E FONTES
-   Permite mudar uma cor aqui e ela muda no site inteiro!
--------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   1. Base: caixas, corpo da página e largura do conteúdo
+   -------------------------------------------------------------------------- */
+
+/* Variáveis: a paleta e as medidas que se repetem, num só sítio.
+   Para mudar uma cor no site todo, basta mudá-la aqui. */
 :root {
-  --cor-fundo-principal: #0d0d15;   /* Fundo escuro elegante */
-  --cor-fundo-secundario: #151522;  /* Fundo um pouco mais claro */
-  --cor-cartao: #1c1c2e;            /* Fundo dos cartões e caixas */
-  --cor-borda: #2d2d46;             /* Cor das linhas de borda */
-  
-  --cor-roxo-primario: #7c3aed;     /* Roxo vibrante (principal) */
-  --cor-roxo-claro: #a855f7;        /* Roxo claro para destaques */
-  
-  --cor-texto: #f1f5f9;             /* Texto branco/claro */
-  --cor-texto-cinza: #94a3b8;       /* Texto secundário/cinza */
-  
-  --fonte-padrao: 'Poppins', sans-serif;
-}
-
-/* --------------------------------------------------------
-   2. RESET BÁSICO (Zerar margens padrão do navegador)
--------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Rolagem suave quando clica nos links do menu */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--fonte-padrao);
-  background-color: var(--cor-fundo-principal);
-  color: var(--cor-texto);
-  line-height: 1.6;
-}
-
-/* Links sem sublinhado por padrão */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Destaque roxo para títulos e palavras-chave */
-.destaque {
-  color: var(--cor-roxo-claro);
-}
-
-/* --------------------------------------------------------
-   3. CABEÇALHO E MENU (HEADER & NAV)
--------------------------------------------------------- */
-.cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background-color: rgba(13, 13, 21, 0.95);
-  border-bottom: 1px solid var(--cor-borda);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--cor-roxo-claro);
-}
-
-.logo span {
-  color: var(--cor-texto);
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  list-style: none;
-}
-
-.menu a {
-  font-size: 0.95rem;
-  color: var(--cor-texto-cinza);
-  transition: color 0.3s ease;
-}
-
-.menu a:hover {
-  color: var(--cor-roxo-claro);
-}
-
-/* Botão especial dentro do menu */
-.botao-menu {
-  padding: 8px 18px;
-  background-color: var(--cor-roxo-primario);
-  color: white !important;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.botao-menu:hover {
-  background-color: var(--cor-roxo-claro);
-}
-
-/* --------------------------------------------------------
-   4. SEÇÃO HERO (APRESENTAÇÃO INICIAL)
--------------------------------------------------------- */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 80px 8%;
-  min-height: 80vh;
-}
-
-.hero-texto {
-  max-width: 550px;
-}
-
-.etiqueta {
-  display: inline-block;
-  background-color: rgba(124, 58, 237, 0.2);
-  color: var(--cor-roxo-claro);
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  padding: 6px 14px;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.hero-texto h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  line-height: 1.2;
-}
-
-.hero-texto h2 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--cor-texto-cinza);
-  margin-bottom: 20px;
-}
-
-.hero-texto p {
-  color: var(--cor-texto-cinza);
-  font-size: 1rem;
-  margin-bottom: 30px;
-}
-
-.hero-botoes {
-  display: flex;
-  gap: 15px;
-}
-
-/* Estilos gerais de Botões */
-.botao {
-  display: inline-block;
-  padding: 12px 26px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.botao-primario {
-  background-color: var(--cor-roxo-primario);
-  color: white;
-}
-
-.botao-primario:hover {
-  background-color: var(--cor-roxo-claro);
-  transform: translateY(-2px);
-}
-
-.botao-secundario {
-  background-color: transparent;
-  color: var(--cor-texto);
-  border: 1px solid var(--cor-borda);
-}
-
-.botao-secundario:hover {
-  border-color: var(--cor-roxo-claro);
-  color: var(--cor-roxo-claro);
-  transform: translateY(-2px);
-}
-
-/* Card simulando tela de código (lado direito do hero) */
-.hero-card {
-  background-color: var(--cor-cartao);
-  border: 1px solid var(--cor-borda);
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  max-width: 420px;
-  width: 100%;
-}
-
-.janela-codigo {
-  display: flex;
-  align-items: center;
-  background-color: #141420;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--cor-borda);
-}
-
-.bolinhas {
-  display: flex;
-  gap: 6px;
-  margin-right: 12px;
-}
-
-.bolinha {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.vermelha { background-color: #ef4444; }
-.amarela  { background-color: #f59e0b; }
-.verde    { background-color: #10b981; }
-
-.nome-arquivo {
-  font-size: 0.8rem;
-  color: var(--cor-texto-cinza);
-}
-
-.codigo-conteudo {
-  padding: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9rem;
-  color: #e2e8f0;
-}
-
-.palavra-chave { color: #c084fc; font-weight: bold; }
-.texto         { color: #86efac; }
-.booleano      { color: #60a5fa; }
-
-/* --------------------------------------------------------
-   5. SEÇÕES GERAIS (Títulos e Espaçamentos)
--------------------------------------------------------- */
-.secao {
-  padding: 80px 8%;
-}
-
-.fundo-escuro {
-  background-color: var(--cor-fundo-secundario);
-}
-
-.titulo-secao {
-  font-size: 2.2rem;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.subtitulo-secao {
-  text-align: center;
-  color: var(--cor-texto-cinza);
-  margin-bottom: 50px;
-  font-size: 1rem;
-}
-
-/* --------------------------------------------------------
-   6. SEÇÃO SOBRE
--------------------------------------------------------- */
-.sobre-conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-}
-
-.sobre-texto {
-  flex: 1;
-}
-
-.sobre-texto p {
-  color: var(--cor-texto-cinza);
-  font-size: 1.05rem;
-  margin-bottom: 20px;
-}
-
-.cards-numeros {
-  display: flex;
-  gap: 20px;
-  flex: 1;
-}
-
-.card-numero {
-  background-color: var(--cor-cartao);
-  border: 1px solid var(--cor-borda);
-  border-radius: 12px;
-  padding: 25px 20px;
-  text-align: center;
-  flex: 1;
-  transition: transform 0.3s ease;
-}
-
-.card-numero:hover {
-  transform: translateY(-5px);
-  border-color: var(--cor-roxo-primario);
-}
-
-.card-numero h3 {
-  font-size: 2rem;
-  color: var(--cor-roxo-claro);
-  margin-bottom: 5px;
-}
-
-.card-numero p {
-  font-size: 0.85rem;
-  color: var(--cor-texto-cinza);
-}
-
-/* --------------------------------------------------------
-   7. SEÇÃO HABILIDADES (CARDS DE TECNOLOGIA)
--------------------------------------------------------- */
-.grid-habilidades {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.card-habilidade {
-  background-color: var(--cor-cartao);
-  border: 1px solid var(--cor-borda);
-  border-radius: 12px;
-  padding: 30px 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.card-habilidade:hover {
-  transform: translateY(-5px);
-  border-color: var(--cor-roxo-primario);
-  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.2);
-}
-
-.icone-tech {
-  font-size: 2.2rem;
-  display: block;
-  margin-bottom: 15px;
-}
-
-.card-habilidade h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.card-habilidade p {
-  font-size: 0.9rem;
-  color: var(--cor-texto-cinza);
-}
-
-/* --------------------------------------------------------
-   8. SEÇÃO PROJETOS
--------------------------------------------------------- */
-.grid-projetos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.card-projeto {
-  background-color: var(--cor-cartao);
-  border: 1px solid var(--cor-borda);
-  border-radius: 14px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.card-projeto:hover {
-  transform: translateY(-6px);
-  border-color: var(--cor-roxo-primario);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-/* Imagens decorativas dos projetos com gradientes elegantes */
-.imagem-projeto {
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imagem-projeto span {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.4);
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-
-.gradiente-1 { background: linear-gradient(135deg, #312e81, #6b21a8); }
-.gradiente-2 { background: linear-gradient(135deg, #1e3a8a, #0284c7); }
-.gradiente-3 { background: linear-gradient(135deg, #064e3b, #0d9488); }
-
-.info-projeto {
-  padding: 24px;
-}
+  --cor-principal: #0f766e;
+  --cor-principal-escura: #115e59;
+  --cor-principal-media: #99f6e4;
+  --cor-principal-clara: #f0fdfa;
+  --cor-titulos: #134e4a;
+  --cor-texto: #1f2937;
+  --cor-texto-secundario: #6b7280;
+  --cor-bordas: #e5e7eb;
+  --cor-bordas-campos: #d1d5db;
+  --cor-fundo: #f8fafc;
+  --cor-fundo-header: #fefefe;
+  --cor-branca: #ffffff;
+  --cor-realce: #ea580c;
+  --cor-realce-clara: #fff7ed;
+  --raio: 12px;
+  --sombra: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --sombra-forte: 0 8px 20px rgba(15, 23, 42, 0.14);
+}
+
+main {
+   background-color: var(--cor-fundo);
+}
+
+
+/* box-sizing para todos os elementos, body e main centrado */
+
+/* --------------------------------------------------------------------------
+   2. Texto e fontes
+   -------------------------------------------------------------------------- */
+
+/* Títulos com a Poppins, parágrafos, links, imagens, figure, video e figcaption */
+
+/* --------------------------------------------------------------------------
+   3. Cabeçalho, menu e rodapé
+   -------------------------------------------------------------------------- */
+   header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: var(--cor-fundo-header);
+      border-bottom: 2px solid var(--cor-bordas);
+      box-shadow: var(--sombra);
+      padding: 10px 0px;
+   }
+
+   #profile-photo {
+      width: 20%;
+      height: 150px;
+   }
+
+   header h1 {
+      color: var(--cor-titulos);
+   }
+
+   header p {
+      color: var(--cor-texto-secundario);
+   }
+
+   nav ul {
+      display: flex;
+      gap: 15px;
+      list-style-type: none;
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 0;
+   }
+
+   nav ul li {
+      padding: 6px 12px;
+      border: none;
+   }
+
+   nav ul li:hover {
+      background-color: var(--cor-realce-clara);
+      border-bottom: 2px solid var(--cor-realce);
+   }
+
+   nav ul a:active {
+      border-bottom: 2px solid var(--cor-realce);
+   }
+
+   nav ul a {
+      text-decoration: none;
+      color: var(--cor-texto);
+      font-size: 16px;
+   }
+
+   h2 {
+      color: var(--cor-titulos);
+      font-size: 25pt;
+   }
+
+   h3 {
+      color: var(--cor-titulos);
+      font-size: 18pt;
+   }
+
+   .etiquetas {
+      display: flex;
+      flex: 2;
+      justify-content: space-evenly;
+      list-style-type: none;
+   }
 
-.categoria {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--cor-roxo-claro);
-  margin-bottom: 8px;
-}
-
-.info-projeto h3 {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
-
-.info-projeto p {
-  color: var(--cor-texto-cinza);
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-}
-
-.link-projeto {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--cor-roxo-claro);
-  transition: color 0.2s ease;
-}
-
-.link-projeto:hover {
-  color: white;
-}
-
-/* --------------------------------------------------------
-   9. SEÇÃO CONTATO E FORMULÁRIO
--------------------------------------------------------- */
-.container-contato {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  max-width: 950px;
-  margin: 0 auto;
-}
-
-.contato-info {
-  flex: 1;
-}
-
-.contato-info h3 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-}
-
-.contato-info p {
-  color: var(--cor-texto-cinza);
-  margin-bottom: 12px;
-}
-
-.links-sociais {
-  display: flex;
-  gap: 12px;
-  margin-top: 25px;
-}
+   .etiquetas li {
+      background-color: var(--cor-principal-media);
+      padding: 6px 12px;
+      border-radius: var(--raio);
 
-.botao-social {
-  padding: 8px 16px;
-  background-color: var(--cor-cartao);
-  border: 1px solid var(--cor-borda);
-  border-radius: 6px;
-  font-size: 0.85rem;
-  color: var(--cor-texto-cinza);
-  transition: all 0.3s ease;
-}
-
-.botao-social:hover {
-  border-color: var(--cor-roxo-claro);
-  color: var(--cor-roxo-claro);
-}
-
-/* Formulário */
-.formulario-contato {
-  flex: 1;
-  background-color: var(--cor-cartao);
-  border: 1px solid var(--cor-borda);
-  border-radius: 12px;
-  padding: 30px;
-}
-
-.campo {
-  margin-bottom: 18px;
-}
-
-.campo label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--cor-texto-cinza);
-  margin-bottom: 6px;
-}
-
-.campo input,
-.campo textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 6px;
-  background-color: var(--cor-fundo-principal);
-  border: 1px solid var(--cor-borda);
-  color: var(--cor-texto);
-  font-family: inherit;
-  font-size: 0.9rem;
-}
-
-.campo input:focus,
-.campo textarea:focus {
-  outline: none;
-  border-color: var(--cor-roxo-primario);
-}
-
-.botao-cheio {
-  width: 100%;
-  text-align: center;
-}
+   }
+/* header, menu com Flexbox, rodapé em coluna e lista .redes */
 
-/* --------------------------------------------------------
-   10. RODAPÉ (FOOTER)
--------------------------------------------------------- */
-.rodape {
-  text-align: center;
-  padding: 30px;
-  border-top: 1px solid var(--cor-borda);
-  color: var(--cor-texto-cinza);
-  font-size: 0.85rem;
-}
-
-.feito-com {
-  margin-top: 6px;
-  font-size: 0.8rem;
-}
+/* --------------------------------------------------------------------------
+   4. Tabelas e formulários
+   -------------------------------------------------------------------------- */
 
-/* --------------------------------------------------------
-   11. RESPONSIVIDADE (Para Celular e Telas Menores)
--------------------------------------------------------- */
-@media (max-width: 768px) {
-  .cabecalho {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-  }
+/* .tabela-responsiva, table, caption, th e td, fieldset, legend, label e campos */
 
-  .menu {
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+/* --------------------------------------------------------------------------
+   5. Componentes reutilizáveis (classes)
+   -------------------------------------------------------------------------- */
 
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 50px 5%;
-  }
+/* .cartao, .curiosidade, .destaque, .botao, .etiquetas, .acoes e .grelha-projetos */
 
-  .hero-texto h1 {
-    font-size: 2.2rem;
-  }
+/* --------------------------------------------------------------------------
+   6. Elementos únicos (id)
+   -------------------------------------------------------------------------- */
 
-  .hero-botoes {
-    justify-content: center;
-  }
+/* #formulario-contacto */
 
-  .sobre-conteudo {
-    flex-direction: column;
-  }
+/* --------------------------------------------------------------------------
+   7. Ecrãs maiores (media queries)
+   -------------------------------------------------------------------------- */
 
-  .cards-numeros {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .container-contato {
-    flex-direction: column;
-  }
-}
+/* @media (min-width: 768px): títulos maiores, rodapé numa linha e grelha de 2 colunas */
